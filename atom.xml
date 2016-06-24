@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Flowerhop.github.io/"/>
-  <updated>2016-06-17T08:12:22.000Z</updated>
+  <updated>2016-06-24T08:28:52.000Z</updated>
   <id>http://Flowerhop.github.io/</id>
   
   <author>
@@ -14,6 +14,114 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sublime-Emmet Snippet Tutorials</title>
+    <link href="http://Flowerhop.github.io/2016/06/24/Sublime-Emmet-Snippet-Tutorials/"/>
+    <id>http://Flowerhop.github.io/2016/06/24/Sublime-Emmet-Snippet-Tutorials/</id>
+    <published>2016-06-24T07:31:47.000Z</published>
+    <updated>2016-06-24T08:28:52.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Tutorials&quot;&gt;&lt;a href=&quot;#Tutorials&quot; class=&quot;headerlink&quot; title=&quot;Tutorials&quot;&gt;&lt;/a&gt;Tutorials&lt;/h2&gt;&lt;p&gt;  This is for using Emmet to manage your snippets.&lt;/p&gt;
+&lt;h3 id=&quot;Step-1&quot;&gt;&lt;a href=&quot;#Step-1&quot; class=&quot;headerlink&quot; title=&quot;Step 1&quot;&gt;&lt;/a&gt;Step 1&lt;/h3&gt;&lt;p&gt;  Sublime Text -&amp;gt; Preferences -&amp;gt; Package Settings -&amp;gt; Emmet -&amp;gt; Settings - User&lt;/p&gt;
+&lt;h3 id=&quot;Step-2-Edit&quot;&gt;&lt;a href=&quot;#Step-2-Edit&quot; class=&quot;headerlink&quot; title=&quot;Step 2 - Edit&quot;&gt;&lt;/a&gt;Step 2 - Edit&lt;/h3&gt;  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;quot;snippets&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;html&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&amp;quot;snippets&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  		&amp;quot;helloWorld&amp;quot;: &amp;quot;Hello World!&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Step-3-Try&quot;&gt;&lt;a href=&quot;#Step-3-Try&quot; class=&quot;headerlink&quot; title=&quot;Step 3 - Try&quot;&gt;&lt;/a&gt;Step 3 - Try&lt;/h3&gt;&lt;p&gt;  In html file, type &lt;code&gt;helloWorld&lt;/code&gt; and press “tab”&lt;/p&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.minwt.com/webdesign-dev/html/10875.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.minwt.com/webdesign-dev/html/10875.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Tutorials&quot;&gt;&lt;a href=&quot;#Tutorials&quot; class=&quot;headerlink&quot; title=&quot;Tutorials&quot;&gt;&lt;/a&gt;Tutorials&lt;/h2&gt;&lt;p&gt;  This is for using Emmet to manage your s
+    
+    </summary>
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/categories/Sublime/"/>
+    
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
+    
+      <category term="Emmet" scheme="http://Flowerhop.github.io/tags/Emmet/"/>
+    
+      <category term="Snippet" scheme="http://Flowerhop.github.io/tags/Snippet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime Snippet Tutorials</title>
+    <link href="http://Flowerhop.github.io/2016/06/24/Sublime-Snippet-Tutorials/"/>
+    <id>http://Flowerhop.github.io/2016/06/24/Sublime-Snippet-Tutorials/</id>
+    <published>2016-06-24T06:27:29.000Z</published>
+    <updated>2016-06-24T08:28:49.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;TuTorials&quot;&gt;&lt;a href=&quot;#TuTorials&quot; class=&quot;headerlink&quot; title=&quot;TuTorials&quot;&gt;&lt;/a&gt;TuTorials&lt;/h2&gt;&lt;h3 id=&quot;Step-1-New-Snippet&quot;&gt;&lt;a href=&quot;#Step-1-New-Snippet&quot; class=&quot;headerlink&quot; title=&quot;Step 1 - New Snippet&quot;&gt;&lt;/a&gt;Step 1 - New Snippet&lt;/h3&gt;&lt;p&gt;  Tools -&amp;gt; New Snippet…&lt;/p&gt;
+&lt;h3 id=&quot;Step-2-Edit&quot;&gt;&lt;a href=&quot;#Step-2-Edit&quot; class=&quot;headerlink&quot; title=&quot;Step 2 - Edit&quot;&gt;&lt;/a&gt;Step 2 - Edit&lt;/h3&gt;  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;snippet&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;content&amp;gt;&amp;lt;![CDATA[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  code here ........&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ]]&amp;gt;&amp;lt;/content&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;tabTrigger&amp;gt;hot key string here ...&amp;lt;/tabTrigger&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;!-- Optional: Set a scope to limit where the snippet will trigger --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;!-- &amp;lt;scope&amp;gt;source.python&amp;lt;/scope&amp;gt; --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/snippet&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;Step-3-Save&quot;&gt;&lt;a href=&quot;#Step-3-Save&quot; class=&quot;headerlink&quot; title=&quot;Step 3 - Save&quot;&gt;&lt;/a&gt;Step 3 - Save&lt;/h3&gt;&lt;p&gt;  Save in the Package/User. It must be addded postfix “.sublime-snippet”&lt;/p&gt;
+&lt;p&gt;  Note: I suggest create your own folder in Package/User to manage the customized snippet&lt;/p&gt;
+&lt;h3 id=&quot;Step-4-Try&quot;&gt;&lt;a href=&quot;#Step-4-Try&quot; class=&quot;headerlink&quot; title=&quot;Step 4 - Try&quot;&gt;&lt;/a&gt;Step 4 - Try&lt;/h3&gt;&lt;p&gt;  Now, you can try to type your key string, and press “tab”&lt;/p&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/banPrint/sublime-text-51689543&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.slideshare.net/banPrint/sublime-text-51689543&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vicjang.logdown.com/posts/685604-sublime-text-use-snippet-to-quickly-insert-code-block&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://vicjang.logdown.com/posts/685604-sublime-text-use-snippet-to-quickly-insert-code-block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part1.html&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;TuTorials&quot;&gt;&lt;a href=&quot;#TuTorials&quot; class=&quot;headerlink&quot; title=&quot;TuTorials&quot;&gt;&lt;/a&gt;TuTorials&lt;/h2&gt;&lt;h3 id=&quot;Step-1-New-Snippet&quot;&gt;&lt;a href=&quot;#Step-1-
+    
+    </summary>
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/categories/Sublime/"/>
+    
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
+    
+      <category term="Snippet" scheme="http://Flowerhop.github.io/tags/Snippet/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime-Emmet Basic and Useful Ways</title>
+    <link href="http://Flowerhop.github.io/2016/06/23/Sublime-Emmet/"/>
+    <id>http://Flowerhop.github.io/2016/06/23/Sublime-Emmet/</id>
+    <published>2016-06-23T07:22:33.000Z</published>
+    <updated>2016-06-24T07:00:20.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Emmet&quot;&gt;&lt;a href=&quot;#Emmet&quot; class=&quot;headerlink&quot; title=&quot;Emmet&quot;&gt;&lt;/a&gt;Emmet&lt;/h2&gt;&lt;p&gt;  &lt;a href=&quot;http://emmet.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Emmet&lt;/a&gt; is a package that I can just type the abbreviation to create the context that I want.&lt;/p&gt;
+&lt;h2 id=&quot;For-example&quot;&gt;&lt;a href=&quot;#For-example&quot; class=&quot;headerlink&quot; title=&quot;For example&quot;&gt;&lt;/a&gt;For example&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;html:5&lt;/code&gt; ＃＃and press “tab”&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;link[rel=stylesheet type=text/css]&lt;/code&gt; or &lt;code&gt;link&lt;/code&gt; and press “tab”&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot; href=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;#page&amp;gt;div.logo+ul#navigation&amp;gt;li*5&amp;gt;a{Item $}&lt;/code&gt; and press “tab”&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;div id=&amp;quot;page&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;div class=&amp;quot;logo&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;ul id=&amp;quot;navigation&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;&amp;quot;&amp;gt;Item 5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://kevintsengtw.blogspot.tw/2012/02/sublime-text-2-part1.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://steven-linkit.blogspot.tw/2015/09/sublime-text-3-emmet-html1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://steven-linkit.blogspot.tw/2015/09/sublime-text-3-emmet-html1.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://steven-linkit.blogspot.tw/2015/11/sublime-text-3-emmet-html2.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://steven-linkit.blogspot.tw/2015/11/sublime-text-3-emmet-html2.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Emmet&quot;&gt;&lt;a href=&quot;#Emmet&quot; class=&quot;headerlink&quot; title=&quot;Emmet&quot;&gt;&lt;/a&gt;Emmet&lt;/h2&gt;&lt;p&gt;  &lt;a href=&quot;http://emmet.io/&quot; target=&quot;_blank&quot; rel=&quot;external
+    
+    </summary>
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/categories/Sublime/"/>
+    
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
+    
+      <category term="Emmet" scheme="http://Flowerhop.github.io/tags/Emmet/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello Blog!</title>
