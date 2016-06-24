@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Flowerhop&#39;s Blog</title>
+  <subtitle>About Learning</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://Flowerhop.github.io/"/>
+  <updated>2016-06-17T08:12:22.000Z</updated>
+  <id>http://Flowerhop.github.io/</id>
+  
+  <author>
+    <name>Flowerhop</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello Blog!</title>
+    <link href="http://Flowerhop.github.io/2016/06/17/HelloBlog/"/>
+    <id>http://Flowerhop.github.io/2016/06/17/HelloBlog/</id>
+    <published>2016-06-17T07:44:34.000Z</published>
+    <updated>2016-06-17T08:12:22.000Z</updated>
+    
+    <content type="html">&lt;p&gt;  Hey, my name is Flowerhop. This is my first time to build a blog. I would like to record about me and my learning on it. &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  Hey, my name is Flowerhop. This is my first time to build a blog. I would like to record about me and my learning on it. &lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Others" scheme="http://Flowerhop.github.io/categories/Others/"/>
+    
+    
+  </entry>
+  
+</feed>
