@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Flowerhop.github.io/"/>
-  <updated>2016-06-24T14:09:21.000Z</updated>
+  <updated>2016-06-25T18:14:36.000Z</updated>
   <id>http://Flowerhop.github.io/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sublime Code Folding Shortcut</title>
+    <link href="http://Flowerhop.github.io/2016/06/25/Sublime-Code-Folding/"/>
+    <id>http://Flowerhop.github.io/2016/06/25/Sublime-Code-Folding/</id>
+    <published>2016-06-25T14:21:41.000Z</published>
+    <updated>2016-06-25T18:14:36.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Shortcut of code folding in Sublime&lt;/p&gt;
+&lt;h3 id=&quot;Folding-Selected-Text&quot;&gt;&lt;a href=&quot;#Folding-Selected-Text&quot; class=&quot;headerlink&quot; title=&quot;Folding Selected Text&quot;&gt;&lt;/a&gt;Folding Selected Text&lt;/h3&gt;&lt;p&gt;  Select the text you want to fold, and hit the shortcut &lt;code&gt;Command + Option + [&lt;/code&gt;. Hit &lt;code&gt;Command + Option + [&lt;/code&gt; to unfold.&lt;/p&gt;
+  &lt;div class=&quot;alert info&quot;&gt;&lt;p&gt;If no selected text, it would automatically fold or unfold where the cursor is.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;Folding-All-Text-By-Level&quot;&gt;&lt;a href=&quot;#Folding-All-Text-By-Level&quot; class=&quot;headerlink&quot; title=&quot;Folding All Text By Level&quot;&gt;&lt;/a&gt;Folding All Text By Level&lt;/h3&gt;&lt;p&gt;  If level is 2, hit &lt;code&gt;Command + K&lt;/code&gt; and &lt;code&gt;Command + 2&lt;/code&gt;. All text would fold 2nd level text.&lt;/p&gt;
+  &lt;div class=&quot;alert info&quot;&gt;&lt;p&gt;So, when level is 0 (&lt;code&gt;Command + K&lt;/code&gt; and &lt;code&gt;Command + 0&lt;/code&gt;), it would unfold.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;Folding-Tag-Attributes-All-Text&quot;&gt;&lt;a href=&quot;#Folding-Tag-Attributes-All-Text&quot; class=&quot;headerlink&quot; title=&quot;Folding Tag Attributes (All Text)&quot;&gt;&lt;/a&gt;Folding Tag Attributes (All Text)&lt;/h3&gt;&lt;p&gt;  In html files, hit &lt;code&gt;Command + K&lt;/code&gt; and &lt;code&gt;Command + T&lt;/code&gt;. All text would fold all text by tag attributes.&lt;/p&gt;
+  &lt;div class=&quot;alert info&quot;&gt;&lt;p&gt;Hit &lt;code&gt;Command + K&lt;/code&gt; and &lt;code&gt;Command + 0&lt;/code&gt;. It would unfold all text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://wesbos.com/sublime-text-code-folding/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wesbos.com/sublime-text-code-folding/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Shortcut of code folding in Sublime&lt;/p&gt;
+&lt;h3 id=&quot;Folding-Selected-Text&quot;&gt;&lt;a href=&quot;#Folding-Selected-Text&quot; class=&quot;headerlink&quot; title=&quot;Folding
+    
+    </summary>
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/categories/Sublime/"/>
+    
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
+    
+      <category term="shortcut" scheme="http://Flowerhop.github.io/tags/shortcut/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime-Emmet Snippet Tutorials</title>
@@ -42,9 +80,9 @@
     
       <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
     
-      <category term="Emmet" scheme="http://Flowerhop.github.io/tags/Emmet/"/>
-    
       <category term="Snippet" scheme="http://Flowerhop.github.io/tags/Snippet/"/>
+    
+      <category term="Emmet" scheme="http://Flowerhop.github.io/tags/Emmet/"/>
     
   </entry>
   
