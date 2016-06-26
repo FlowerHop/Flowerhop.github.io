@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Flowerhop.github.io/"/>
-  <updated>2016-06-25T18:14:36.000Z</updated>
+  <updated>2016-06-26T06:57:57.000Z</updated>
   <id>http://Flowerhop.github.io/</id>
   
   <author>
@@ -16,11 +16,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Sublime Code Folding Shortcut</title>
+    <title>Sublime-Shortcut Window Control</title>
+    <link href="http://Flowerhop.github.io/2016/06/26/Sublime-Shortcut-Window-Control/"/>
+    <id>http://Flowerhop.github.io/2016/06/26/Sublime-Shortcut-Window-Control/</id>
+    <published>2016-06-26T06:49:19.000Z</published>
+    <updated>2016-06-26T06:57:57.000Z</updated>
+    
+    <content type="html">&lt;p&gt;Shortcut of window control in Sublime&lt;/p&gt;
+&lt;h3 id=&quot;Full-Screen&quot;&gt;&lt;a href=&quot;#Full-Screen&quot; class=&quot;headerlink&quot; title=&quot;Full Screen&quot;&gt;&lt;/a&gt;Full Screen&lt;/h3&gt;&lt;p&gt;  Hit &lt;code&gt;Command + Control + (Shift) + F&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;Split-N-Windows&quot;&gt;&lt;a href=&quot;#Split-N-Windows&quot; class=&quot;headerlink&quot; title=&quot;Split N Windows&quot;&gt;&lt;/a&gt;Split N Windows&lt;/h3&gt;&lt;p&gt;  Hit &lt;code&gt;Command + Option + N&lt;/code&gt;(N means number. For example N=3, hit &lt;code&gt;Command + Option + 3&lt;/code&gt;). &lt;/p&gt;
+&lt;h3 id=&quot;Working-Directory&quot;&gt;&lt;a href=&quot;#Working-Directory&quot; class=&quot;headerlink&quot; title=&quot;Working Directory&quot;&gt;&lt;/a&gt;Working Directory&lt;/h3&gt;&lt;p&gt;  Hit &lt;code&gt;Command + K&lt;/code&gt;, and then &lt;code&gt;Command + B&lt;/code&gt;. It would open or hide working directory.&lt;/p&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://code.kpman.cc/2014/10/14/sublime-text-3-mac-%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://code.kpman.cc/2014/10/14/sublime-text-3-mac-%E6%8C%87%E5%8D%97/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Shortcut of window control in Sublime&lt;/p&gt;
+&lt;h3 id=&quot;Full-Screen&quot;&gt;&lt;a href=&quot;#Full-Screen&quot; class=&quot;headerlink&quot; title=&quot;Full Screen&quot;&gt;&lt;/a&gt;Full Scr
+    
+    </summary>
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/categories/Sublime/"/>
+    
+    
+      <category term="Sublime" scheme="http://Flowerhop.github.io/tags/Sublime/"/>
+    
+      <category term="shortcut" scheme="http://Flowerhop.github.io/tags/shortcut/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime-Shortcut Code Folding</title>
     <link href="http://Flowerhop.github.io/2016/06/25/Sublime-Code-Folding/"/>
     <id>http://Flowerhop.github.io/2016/06/25/Sublime-Code-Folding/</id>
     <published>2016-06-25T14:21:41.000Z</published>
-    <updated>2016-06-25T18:14:36.000Z</updated>
+    <updated>2016-06-26T06:57:43.000Z</updated>
     
     <content type="html">&lt;p&gt;Shortcut of code folding in Sublime&lt;/p&gt;
 &lt;h3 id=&quot;Folding-Selected-Text&quot;&gt;&lt;a href=&quot;#Folding-Selected-Text&quot; class=&quot;headerlink&quot; title=&quot;Folding Selected Text&quot;&gt;&lt;/a&gt;Folding Selected Text&lt;/h3&gt;&lt;p&gt;  Select the text you want to fold, and hit the shortcut &lt;code&gt;Command + Option + [&lt;/code&gt;. Hit &lt;code&gt;Command + Option + [&lt;/code&gt; to unfold.&lt;/p&gt;
