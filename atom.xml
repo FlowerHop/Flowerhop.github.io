@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Flowerhop.github.io/"/>
-  <updated>2016-06-27T17:29:04.000Z</updated>
+  <updated>2016-06-27T17:32:40.000Z</updated>
   <id>http://Flowerhop.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>iTerm2 Change Your Terminal</title>
+    <title>Change Your Terminal - iTerm2</title>
     <link href="http://Flowerhop.github.io/2016/06/28/iTerm-Change-Your-Terminal/"/>
     <id>http://Flowerhop.github.io/2016/06/28/iTerm-Change-Your-Terminal/</id>
     <published>2016-06-27T16:50:59.000Z</published>
-    <updated>2016-06-27T17:29:04.000Z</updated>
+    <updated>2016-06-27T17:32:40.000Z</updated>
     
     <content type="html">&lt;h3 id=&quot;Download-Zsh&quot;&gt;&lt;a href=&quot;#Download-Zsh&quot; class=&quot;headerlink&quot; title=&quot;Download Zsh&quot;&gt;&lt;/a&gt;Download Zsh&lt;/h3&gt;&lt;p&gt;  &lt;code&gt;$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh&lt;/code&gt;&lt;/p&gt;
   &lt;div class=&quot;alert warning&quot;&gt;&lt;p&gt;If you want to change shell: &lt;code&gt;chsh -s [shell] [username]&lt;/code&gt;&lt;br&gt;Get all the shells: &lt;code&gt;cat /etc/shells&lt;/code&gt;&lt;/p&gt;
@@ -81,11 +81,11 @@
       <category term="iTerm" scheme="http://Flowerhop.github.io/categories/iTerm/"/>
     
     
+      <category term="iTerm2" scheme="http://Flowerhop.github.io/tags/iTerm2/"/>
+    
       <category term="Linux" scheme="http://Flowerhop.github.io/tags/Linux/"/>
     
       <category term="Shell" scheme="http://Flowerhop.github.io/tags/Shell/"/>
-    
-      <category term="iTerm2" scheme="http://Flowerhop.github.io/tags/iTerm2/"/>
     
       <category term="Powerline" scheme="http://Flowerhop.github.io/tags/Powerline/"/>
     
