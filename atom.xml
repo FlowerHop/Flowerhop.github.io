@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Flowerhop.github.io/"/>
-  <updated>2016-06-26T06:57:57.000Z</updated>
+  <updated>2016-06-27T17:29:04.000Z</updated>
   <id>http://Flowerhop.github.io/</id>
   
   <author>
@@ -14,6 +14,82 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iTerm2 Change Your Terminal</title>
+    <link href="http://Flowerhop.github.io/2016/06/28/iTerm-Change-Your-Terminal/"/>
+    <id>http://Flowerhop.github.io/2016/06/28/iTerm-Change-Your-Terminal/</id>
+    <published>2016-06-27T16:50:59.000Z</published>
+    <updated>2016-06-27T17:29:04.000Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;Download-Zsh&quot;&gt;&lt;a href=&quot;#Download-Zsh&quot; class=&quot;headerlink&quot; title=&quot;Download Zsh&quot;&gt;&lt;/a&gt;Download Zsh&lt;/h3&gt;&lt;p&gt;  &lt;code&gt;$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh&lt;/code&gt;&lt;/p&gt;
+  &lt;div class=&quot;alert warning&quot;&gt;&lt;p&gt;If you want to change shell: &lt;code&gt;chsh -s [shell] [username]&lt;/code&gt;&lt;br&gt;Get all the shells: &lt;code&gt;cat /etc/shells&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div class=&quot;alert warning&quot;&gt;&lt;p&gt;You may have problems that some command like &lt;code&gt;nvm&lt;/code&gt; worked on bash, but now, it doesn’t. Because you are in zsh. So, you need to copy ~/.bashrc and paste it on the end of the file, ~/.zshrc&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&quot;Setting-Themes-Powerline&quot;&gt;&lt;a href=&quot;#Setting-Themes-Powerline&quot; class=&quot;headerlink&quot; title=&quot;Setting Themes: Powerline&quot;&gt;&lt;/a&gt;Setting Themes: Powerline&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Download Theme&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git clone git://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme   ~/.ohmyzsh-powerline&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd .ohmyzsh-powerline/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ ./install_in_omz.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;div class=&quot;alert info&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://zshthem.es/all/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Other themes&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Edit Theme Settings&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ vim .zshrc&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;ZSH_THEME=&amp;quot;powerline&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Save and Restart&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Download Fonts of Powerline&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ git clone git://github.com/powerline/ fonts ~/.powerline_fonts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.powerline_fonts&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ ./install.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Settings&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;iTerm-&amp;gt;Preference-&amp;gt;Profile-&amp;gt;Text-&amp;gt;Change Font&lt;/code&gt; (include “Regular Font” and “Non-ASCII Font”)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Install-zsh-completions&quot;&gt;&lt;a href=&quot;#Install-zsh-completions&quot; class=&quot;headerlink&quot; title=&quot;Install zsh-completions&quot;&gt;&lt;/a&gt;Install zsh-completions&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install zsh-completions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;edit .zshrc&lt;/p&gt;
+&lt;figure class=&quot;codeblock codeblock--tabbed&quot;&gt;&lt;figcaption&gt;&lt;span&gt;.zshrc&lt;/span&gt;&lt;ul class=&quot;tabs&quot;&gt;&lt;li class=&quot;tab active&quot;&gt;shell&lt;/li&gt;&lt;/ul&gt;&lt;/figcaption&gt;&lt;div class=&quot;tabs-content&quot;&gt;&lt;figure class=&quot;highlight plain&quot; style=&quot;display: block;&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Path to your oh-my-zsh configuration.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ZSH=$HOME/.oh-my-zsh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# zsh-completions&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fpath=(/usr/local/share/zsh-completions fpath)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Set name of the theme to load.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Look in ~/.oh-my-zsh/themes/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# Optionally, if you set this to &quot;random&quot;, it&#39;ll load a random theme each&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# time that oh-my-zsh is loaded.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#ZSH_THEME=&quot;robbyrussell&quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;rebuild&lt;br&gt;&lt;code&gt;rm -f ~/.zcompdump; compinit&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Setting-Plugin&quot;&gt;&lt;a href=&quot;#Setting-Plugin&quot; class=&quot;headerlink&quot; title=&quot;Setting Plugin&quot;&gt;&lt;/a&gt;Setting Plugin&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Default plugins are in &lt;code&gt;~/.oh-my-zsh/plugins&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In .zshrc, edit &lt;code&gt;plugins=(git)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;References&quot;&gt;&lt;a href=&quot;#References&quot; class=&quot;headerlink&quot; title=&quot;References&quot;&gt;&lt;/a&gt;References&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://oomusou.io/osx/iterm2-setup/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://oomusou.io/osx/iterm2-setup/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/zhoujie/archive/2013/03/24/linux7.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/zhoujie/archive/2013/03/24/linux7.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_6c9d65a10100p703.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.sina.com.cn/s/blog_6c9d65a10100p703.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://icarus4.logdown.com/posts/177661-from-bash-to-zsh-setup-tips&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://icarus4.logdown.com/posts/177661-from-bash-to-zsh-setup-tips&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/16904658/node-version-manager-install-nvm-command-not-found&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://qbsuranalang.blogspot.tw/2015/01/zsh-macterminal_24.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://qbsuranalang.blogspot.tw/2015/01/zsh-macterminal_24.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Download-Zsh&quot;&gt;&lt;a href=&quot;#Download-Zsh&quot; class=&quot;headerlink&quot; title=&quot;Download Zsh&quot;&gt;&lt;/a&gt;Download Zsh&lt;/h3&gt;&lt;p&gt;  &lt;code&gt;$ curl -L https://raw.
+    
+    </summary>
+    
+      <category term="iTerm" scheme="http://Flowerhop.github.io/categories/iTerm/"/>
+    
+    
+      <category term="Linux" scheme="http://Flowerhop.github.io/tags/Linux/"/>
+    
+      <category term="Shell" scheme="http://Flowerhop.github.io/tags/Shell/"/>
+    
+      <category term="iTerm2" scheme="http://Flowerhop.github.io/tags/iTerm2/"/>
+    
+      <category term="Powerline" scheme="http://Flowerhop.github.io/tags/Powerline/"/>
+    
+  </entry>
   
   <entry>
     <title>Sublime-Shortcut Window Control</title>
