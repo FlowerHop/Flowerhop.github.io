@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Flowerhop&#39;s Blog">
-    <title>Archives: 2016/7 - Flowerhop&#39;s Blog</title>
+    <title>Tag: IoT - Flowerhop&#39;s Blog</title>
     <meta name="author" content="Flowerhop">
     
         <meta name="keywords" content="hexo,javascript,Flowerhop&#39;s Blog,">
@@ -18,7 +18,7 @@
     <meta name="description">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Flowerhop's Blog">
-<meta property="og:url" content="http://Flowerhop.github.io/archives/2016/07/index.html">
+<meta property="og:url" content="http://Flowerhop.github.io/tags/IoT/index.html">
 <meta property="og:site_name" content="Flowerhop's Blog">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -267,91 +267,6 @@
         
     </article>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/07/02/SASS-SCSS-Basic-Tutorial/">
-                            SASS/SCSS - Basic Tutorial
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-07-02T13:24:47+08:00">
-	
-		    Jul 02, 2016
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/Web-Development/">Web Development</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><ul>
-<li><p>Install sass<br><code>gem install sass</code></p>
-</li>
-<li><p>Install compass (manage the projects)<br><code>gem install compass</code></p>
-</li>
-<li><p>Create a project<br><code>compass create [project_name]</code></p>
-<div class="alert info"><p>If you want to watch your code, <code>compass watch [project_name]</code></p>
-</div>
-</li>
-<li><p>Setting<br>Modify the file, config.rb.</p>
-<div class="alert info"><p>If you don’t want to comment in your css files, <code>line_comments = false</code>.</p>
-</div>
-</li>
-</ul>
-<h2 id="SCSS-Compares-CSS"><a href="#SCSS-Compares-CSS" class="headerlink" title="SCSS Compares CSS"></a>SCSS Compares CSS</h2><ul>
-<li><p>Variable</p>
-<figure class="codeblock codeblock--tabbed"><figcaption><span>variable_example</span><ul class="tabs"><li class="tab active">scss</li><li class="tab">css</li></ul></figcaption><div class="tabs-content"><figure class="highlight scss" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$text-size</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="selector-tag">a</span> {</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$text-size</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">b</span> {</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="variable">$text-size</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><figure class="highlight css" style="display: none;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span> {</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">b</span> {</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure>
-</li>
-<li><p>Nesting </p>
-<figure class="codeblock codeblock--tabbed"><figcaption><span>nesting_example</span><ul class="tabs"><li class="tab active">scss</li><li class="tab">css</li></ul></figcaption><div class="tabs-content"><figure class="highlight scss" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> {</span><br><span class="line">  <span class="comment">/* code 1 */</span></span><br><span class="line">  <span class="selector-tag">li</span> {</span><br><span class="line">    <span class="comment">/* code 2 */</span></span><br><span class="line"></span><br><span class="line">    &amp;<span class="selector-class">.top</span> {</span><br><span class="line">      <span class="comment">/* code 3 */</span></span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><figure class="highlight css" style="display: none;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> {</span><br><span class="line">  <span class="comment">/* code 1 */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span> {</span><br><span class="line">  <span class="comment">/* code 2 */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span><span class="selector-class">.top</span> {</span><br><span class="line">  <span class="comment">/* code 3 */</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure>
-</li>
-<li><p>Mixins<br>It’s just like function.</p>
-<figure class="codeblock codeblock--tabbed"><figcaption><span>mixins_example</span><ul class="tabs"><li class="tab active">scss</li><li class="tab">css</li></ul></figcaption><div class="tabs-content"><figure class="highlight scss" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">mixin</span> roundedBox (<span class="variable">$radius</span>: 5px) {</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="variable">$radius</span>;</span><br><span class="line">  -moz-<span class="attribute">border-radius</span>: <span class="variable">$radius</span>;</span><br><span class="line">  -webkit-<span class="attribute">border-radius</span>: <span class="variable">$radius</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> {</span><br><span class="line">  @<span class="keyword">include</span> roundedBox (<span class="number">10px</span>);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#box</span> {</span><br><span class="line">  @<span class="keyword">include</span> roundedBox;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><figure class="highlight css" style="display: none;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> {</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">-moz-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">-webkit-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-id">#box</span> {</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">-moz-border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">-webkit-border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure>
-</li>
-<li><p>Inheritance</p>
-<figure class="codeblock codeblock--tabbed"><figcaption><span>inheritance_example</span><ul class="tabs"><li class="tab active">scss</li><li class="tab">css</li></ul></figcaption><div class="tabs-content"><figure class="highlight scss" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.class1</span> {</span><br><span class="line">  <span class="comment">/* code 1 */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class2</span> {</span><br><span class="line">  @<span class="keyword">extend</span> .class1;</span><br><span class="line">  <span class="comment">/* code 2 */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class3</span> {</span><br><span class="line">  @<span class="keyword">extend</span> .class1;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><figure class="highlight css" style="display: none;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.class1</span> <span class="selector-class">.class2</span> <span class="selector-class">.class3</span> {</span><br><span class="line">  <span class="comment">/* code 1 */</span></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.class3</span> {</span><br><span class="line">  <span class="comment">/* code 2*/</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure>
-</li>
-<li><p>Other useful features</p>
-<ol>
-<li><code>@import</code>: import the files </li>
-<li>Computation</li>
-<li>Color</li>
-</ol>
-</li>
-</ul>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
-<li><a href="http://blog.visioncan.com/2011/sass-scss-your-css/" target="_blank" rel="external">http://blog.visioncan.com/2011/sass-scss-your-css/</a></li>
-</ul>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2016/07/02/SASS-SCSS-Basic-Tutorial/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
     <div class="pagination-bar">
     <ul class="pagination">
         
@@ -361,7 +276,6 @@
 </div>
 
 </section>
-
 
 
                 <footer id="footer" class="main-content-wrap">

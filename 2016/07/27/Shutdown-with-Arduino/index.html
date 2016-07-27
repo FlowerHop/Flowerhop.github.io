@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Flowerhop&#39;s Blog">
+    <title>Shutdown with Arduino - Flowerhop&#39;s Blog</title>
+    <meta name="author" content="Flowerhop">
+    
+        <meta name="keywords" content="hexo,javascript,Flowerhop&#39;s Blog,">
+    
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta name="description" content="Intro  One day, my girl friend said she require a thing that can help her turn off her computer automatically when she goes to the bed. So, I try to use Arduino with a photoresistance to solve her pro">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Shutdown with Arduino">
+<meta property="og:url" content="http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/index.html">
+<meta property="og:site_name" content="Flowerhop's Blog">
+<meta property="og:description" content="Intro  One day, my girl friend said she require a thing that can help her turn off her computer automatically when she goes to the bed. So, I try to use Arduino with a photoresistance to solve her pro">
+<meta property="og:updated_time" content="2016-07-27T08:59:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Shutdown with Arduino">
+<meta name="twitter:description" content="Intro  One day, my girl friend said she require a thing that can help her turn off her computer automatically when she goes to the bed. So, I try to use Arduino with a photoresistance to solve her pro">
+    
+    
+        
+    
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+    <!--STYLES END-->
+    
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+<header id="header" data-behavior="3">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <h1 class="header-title">
+        <a class="header-title-link" href="/ ">Flowerhop&#39;s Blog</a>
+    </h1>
+    
+        
+            <a  class="header-right-icon "
+                href="#about">
+        
+        
+            <i class="fa fa-lg fa-question"></i>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="3">
+    
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/ "
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                    <span class="sidebar-button-desc">Home</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-categories"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                    <span class="sidebar-button-desc">Categories</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-tags"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                    <span class="sidebar-button-desc">Tags</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/all-archives"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                    <span class="sidebar-button-desc">Archives</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link st-search-show-outputs"
+                         href="#search"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                    <span class="sidebar-button-desc">Search</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="#about"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                    <span class="sidebar-button-desc">About</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link " href="https://github.com/Flowerhop" target="_blank">
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                    <span class="sidebar-button-desc">GitHub</span>
+                </a>
+        </li>
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link " href="https://www.facebook.com/profile.php?id=100002071685564" target="_blank">
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+                    <span class="sidebar-button-desc">Facebook</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+        <ul class="sidebar-buttons">
+        
+            <li class="sidebar-button">
+                
+                    <a  class="sidebar-button-link "
+                         href="/atom.xml"
+                        
+                    >
+                
+                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                    <span class="sidebar-button-desc">RSS</span>
+                </a>
+        </li>
+        
+    </ul>
+    
+</nav>
+
+            
+            <div id="main" data-behavior="3"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            Shutdown with Arduino
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2016-07-27T15:38:00+08:00">
+	
+		    Jul 27, 2016
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Arduino/">Arduino</a>
+
+
+    
+</div>
+
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>  One day, my girl friend said she require a thing that can help her turn off her computer automatically when she goes to the bed. So, I try to use Arduino with a photoresistance to solve her problem.</p>
+<h2 id="Arduino"><a href="#Arduino" class="headerlink" title="Arduino"></a>Arduino</h2><ol>
+<li>Check References 2(<a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html" target="_blank" rel="external">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html</a>).</li>
+<li>Write the value of the photoresistance to the serial.</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">int photocellPin = 2;</span><br><span class="line">int photocellVal = 0;</span><br><span class="line">int minLight = 50;</span><br><span class="line">int ledPin = 9;</span><br><span class="line">int ledState = 0;</span><br><span class="line"></span><br><span class="line">void setup () &#123;</span><br><span class="line">  pinMode (ledPin, OUTPUT);</span><br><span class="line">  Serial.begin (9600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void loop () &#123;</span><br><span class="line">  photocell = analogRead (photocellPin);</span><br><span class="line">  Serial.println (photocell);</span><br><span class="line"></span><br><span class="line">  if (photocellVal &lt; minLight &amp;&amp; ledState == 0) &#123;</span><br><span class="line">    digitalWrite (ledPin, HIGH);</span><br><span class="line">    ledState = 1;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (photocellVal &gt; minLight &amp;&amp; ledState == 1) &#123;</span><br><span class="line">    digitalWrite (ledPin, LOW);</span><br><span class="line">    ledState = 0;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  delay (100);</span><br><span class="line">&#125;</span><br><span class="line">      </span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><ol>
+<li>install python (I use 3.4.1.)</li>
+<li>install pyserial and py2exe, run <code>python -m pip install -U pyserial</code> and <code>python -m pip install -U py2exe</code><div class="alert warning"><p>If using python 3.5, py2exe would throw an error. Check <a href="http://www.python-forum.org/viewtopic.php?f=10&amp;t=18057" target="_blank" rel="external">this</a>.</p>
+</div></li>
+<li><figure class="codeblock codeblock--tabbed"><figcaption><span>test</span><ul class="tabs"><li class="tab active">python</li></ul></figcaption><div class="tabs-content"><figure class="highlight python" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> serial</span><br><span class="line"><span class="keyword">import</span> types</span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">  <span class="keyword">try</span>:</span><br><span class="line">    ser = serial.Serial(<span class="string">'COM3'</span>, <span class="number">9600</span>)</span><br><span class="line">    <span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">      string = ser.readline().decode(<span class="string">"utf-8"</span>)</span><br><span class="line">      <span class="keyword">if</span> int(string) &gt; <span class="number">50</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"Open"</span>)</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"Close"</span>)</span><br><span class="line">        x = os.popen(<span class="string">"shutdown -s -t 0"</span>).read()</span><br><span class="line">        <span class="keyword">print</span> (x)</span><br><span class="line">      print(int(string))</span><br><span class="line">  <span class="keyword">except</span>:</span><br><span class="line">    print(<span class="string">"except"</span>)</span><br><span class="line">    time.sleep (<span class="number">30</span>)</span><br></pre></td></tr></tbody></table></figure></div></figure>
+ <figure class="codeblock codeblock--tabbed"><figcaption><span>inst</span><ul class="tabs"><li class="tab active">python</li></ul></figcaption><div class="tabs-content"><figure class="highlight python" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> distutils.core <span class="keyword">import</span> setup</span><br><span class="line"><span class="keyword">import</span> py2exe</span><br><span class="line">setup(console=[<span class="string">'test.py'</span>])</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
+<li>run <code>python inst.py install</code> and <code>puthon inst.py py2exe</code></li>
+</ol>
+<h2 id="Execute"><a href="#Execute" class="headerlink" title="Execute"></a>Execute</h2><ol>
+<li>USB connect the Arduino and PC</li>
+<li>Open the execute file test.exe</li>
+</ol>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
+<li><a href="http://kunhsien.blogspot.tw/2016/01/python-python-windows10ubuntu1204osx.html" target="_blank" rel="external">http://kunhsien.blogspot.tw/2016/01/python-python-windows10ubuntu1204osx.html</a></li>
+<li><a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html" target="_blank" rel="external">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html</a></li>
+<li><a href="http://ghaouse.blogspot.tw/2011/09/py2exe.html" target="_blank" rel="external">http://ghaouse.blogspot.tw/2011/09/py2exe.html</a></li>
+</ol>
+
+            
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Arduino/">Arduino</a> <a class="tag tag--primary tag--small t-link" href="/tags/IoT/">IoT</a> <a class="tag tag--primary tag--small t-link" href="/tags/Python/">Python</a> <a class="tag tag--primary tag--small t-link" href="/tags/Windows/">Windows</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/02/SASS-SCSS-Basic-Tutorial/" data-tooltip="SASS/SCSS - Basic Tutorial">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 Flowerhop. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="3">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/02/SASS-SCSS-Basic-Tutorial/" data-tooltip="SASS/SCSS - Basic Tutorial">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="3">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://Flowerhop.github.io/2016/07/27/Shutdown-with-Arduino/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+            
+        </div>
+        
+
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <h4 id="about-card-name">Flowerhop</h4>
+        
+            <h5 id="about-card-bio"><p>author.bio</p>
+</h5>
+        
+        
+            <h5 id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
+
+            </h5>
+        
+        
+    </div>
+</div>
+
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+    </body>
+    <!--SCRIPTS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/jquery.fancybox-thumbs.js"></script>
+<script src="/assets/js/tranquilpeak.js"></script>
+<!--SCRIPTS END-->
+
+    
+
+
+
+</html>

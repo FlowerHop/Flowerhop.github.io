@@ -202,6 +202,77 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2016/07/27/Shutdown-with-Arduino/">
+                            Shutdown with Arduino
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2016-07-27T15:38:00+08:00">
+	
+		    Jul 27, 2016
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Arduino/">Arduino</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>  One day, my girl friend said she require a thing that can help her turn off her computer automatically when she goes to the bed. So, I try to use Arduino with a photoresistance to solve her problem.</p>
+<h2 id="Arduino"><a href="#Arduino" class="headerlink" title="Arduino"></a>Arduino</h2><ol>
+<li>Check References 2(<a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html" target="_blank" rel="external">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html</a>).</li>
+<li>Write the value of the photoresistance to the serial.</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">int photocellPin = 2;</span><br><span class="line">int photocellVal = 0;</span><br><span class="line">int minLight = 50;</span><br><span class="line">int ledPin = 9;</span><br><span class="line">int ledState = 0;</span><br><span class="line"></span><br><span class="line">void setup () &#123;</span><br><span class="line">  pinMode (ledPin, OUTPUT);</span><br><span class="line">  Serial.begin (9600);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void loop () &#123;</span><br><span class="line">  photocell = analogRead (photocellPin);</span><br><span class="line">  Serial.println (photocell);</span><br><span class="line"></span><br><span class="line">  if (photocellVal &lt; minLight &amp;&amp; ledState == 0) &#123;</span><br><span class="line">    digitalWrite (ledPin, HIGH);</span><br><span class="line">    ledState = 1;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (photocellVal &gt; minLight &amp;&amp; ledState == 1) &#123;</span><br><span class="line">    digitalWrite (ledPin, LOW);</span><br><span class="line">    ledState = 0;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  delay (100);</span><br><span class="line">&#125;</span><br><span class="line">      </span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><ol>
+<li>install python (I use 3.4.1.)</li>
+<li>install pyserial and py2exe, run <code>python -m pip install -U pyserial</code> and <code>python -m pip install -U py2exe</code><div class="alert warning"><p>If using python 3.5, py2exe would throw an error. Check <a href="http://www.python-forum.org/viewtopic.php?f=10&amp;t=18057" target="_blank" rel="external">this</a>.</p>
+</div></li>
+<li><figure class="codeblock codeblock--tabbed"><figcaption><span>test</span><ul class="tabs"><li class="tab active">python</li></ul></figcaption><div class="tabs-content"><figure class="highlight python" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> serial</span><br><span class="line"><span class="keyword">import</span> types</span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">  <span class="keyword">try</span>:</span><br><span class="line">    ser = serial.Serial(<span class="string">'COM3'</span>, <span class="number">9600</span>)</span><br><span class="line">    <span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">      string = ser.readline().decode(<span class="string">"utf-8"</span>)</span><br><span class="line">      <span class="keyword">if</span> int(string) &gt; <span class="number">50</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"Open"</span>)</span><br><span class="line">      <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">"Close"</span>)</span><br><span class="line">        x = os.popen(<span class="string">"shutdown -s -t 0"</span>).read()</span><br><span class="line">        <span class="keyword">print</span> (x)</span><br><span class="line">      print(int(string))</span><br><span class="line">  <span class="keyword">except</span>:</span><br><span class="line">    print(<span class="string">"except"</span>)</span><br><span class="line">    time.sleep (<span class="number">30</span>)</span><br></pre></td></tr></tbody></table></figure></div></figure>
+ <figure class="codeblock codeblock--tabbed"><figcaption><span>inst</span><ul class="tabs"><li class="tab active">python</li></ul></figcaption><div class="tabs-content"><figure class="highlight python" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> distutils.core <span class="keyword">import</span> setup</span><br><span class="line"><span class="keyword">import</span> py2exe</span><br><span class="line">setup(console=[<span class="string">'test.py'</span>])</span><br></pre></td></tr></tbody></table></figure></div></figure></li>
+<li>run <code>python inst.py install</code> and <code>puthon inst.py py2exe</code></li>
+</ol>
+<h2 id="Execute"><a href="#Execute" class="headerlink" title="Execute"></a>Execute</h2><ol>
+<li>USB connect the Arduino and PC</li>
+<li>Open the execute file test.exe</li>
+</ol>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
+<li><a href="http://kunhsien.blogspot.tw/2016/01/python-python-windows10ubuntu1204osx.html" target="_blank" rel="external">http://kunhsien.blogspot.tw/2016/01/python-python-windows10ubuntu1204osx.html</a></li>
+<li><a href="http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html" target="_blank" rel="external">http://coopermaa2nd.blogspot.tw/2010/12/arduino-lab8-led.html</a></li>
+<li><a href="http://ghaouse.blogspot.tw/2011/09/py2exe.html" target="_blank" rel="external">http://ghaouse.blogspot.tw/2011/09/py2exe.html</a></li>
+</ol>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2016/07/27/Shutdown-with-Arduino/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2016/07/02/SASS-SCSS-Basic-Tutorial/">
                             SASS/SCSS - Basic Tutorial
                         </a>
